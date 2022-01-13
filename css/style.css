@@ -1,0 +1,26 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.pai h1+p { /* selecionar o primeiro P depois do h1 */
+    color: red;
+}
+
+.pai h1~p { /* selecionar todos os P depois do h1 */
+    font-style: italic;
+}
+
+[meu-atributo] {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+h1:hover {
+    color: blue;
+    transition: all 1s ease-in-out;
+}
+
+p:not(.meio){
+    font-style: oblique;
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: sans-serif;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .grid {
+            max-width: 1200px;
+            padding: 15px;
+            margin: 0 auto;
+            padding-top: 73px;
+        }
+
+        .grid .col {
+            display: block;
+            width: 33.3%;
+            height: 300px;
+            background-color: red;
+            margin: 20px;
+            float: left;
+            border-radius: 5px;
+            box-shadow: 0 0 15px 5px turquoise;
+        }
+
+        .grid:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .menu {
+            width: 100%;
+            position: fixed;
+            background: black;
+        }
+
+        .menu ul {
+            list-style: none;
+            display: block;
+            max-width: 1200px;
+            padding: 0 30px;
+            margin: 0 auto;
+
+        }
+
+        .menu ul li {
+            float: left;
+        }
+
+        .menu ul li a{
+            transition: all 300ms ease-in-out;
+            display: block;
+            color: white;
+            padding: 20px;
+            text-decoration: none;
+        }
+        
+        
+        .menu ul li a:hover {
+            background: gray;
+        }
+        
+        .full-page {
+            max-width: 100%;
+            padding: 0 30px;
+            padding-top: 73px;
+            margin-top: 6000px;
+            height: 100vh;
+            background: turquoise;
+        }
+        .full-page-content {
+            max-width: 1200px;
+            padding: 0 30px;
+            margin: 0 auto;
+        }
+        
+
+        @media (max-width:568px) {
+            .grid .col {
+                width: 100%;
+            }
+        }
+
+        @media (min-width:321px) and (max-width: 768px) {
+            .grid .col {
+                width: 50%;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#full-page">full-page</a></li>
+        </ul>
+    </nav>
+    <div class="grid">
+        <div class="col" id="home"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <section id="full-page" class="full-page">
+            <div class="full-page-content">
+            <h1>lorem ipsum</h1>
+            <p class="p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam alias sed neque dicta, reprehenderit, minima numquam officiis modi commodi explicabo dolorem veniam! Corporis nesciunt modi aspernatur cum velit tenetur explicabo?</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

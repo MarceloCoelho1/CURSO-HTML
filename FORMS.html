@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        label {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="get" target="_blank" autocomplete="off">
+        <p>Meu formulário</p>
+        <p>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="Seu nome" required>
+            
+        </p>
+        <p>
+            <label for="dev">Sou um dev</label>
+            <input type="checkbox" name="dev" >   
+        </p>
+        <p>
+            <label for="dev1">Sou um dev</label>
+            <input type="checkbox" name="dev1" > 
+        </p>
+        <P>
+            Gênero: <br>
+            <label for="feminino">feminino</label>
+            <input type="radio" name="genero" id="feminino"> <br>
+            <label for="masculino">masculino</label>
+            <input type="radio" name="genero" id="Masculino"><br>
+            <label for="outro">outro</label>
+            <input type="radio" name="genero" id="dev3">
+        </P>
+        
+        <p>
+            <label for="nome">Date:</label>
+            <input type="date" name="date" id="date" >   
+        </p>
+
+        <p>
+            <label for="email">Seu email:</label>
+            <input type="email" name="email" id="email" placeholder="Seu email" >   
+        </p>
+
+        <label for="foto">Sua foto</label>
+        <input type="file" name="foto" id="foto" accept=".png"> 
+
+        <p>
+            <button type="submit">Enviar</button>
+            <button type="reset">resetar</button>
+        </p>
+    
+    </form>
+</body>
+</html>
